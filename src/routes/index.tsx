@@ -114,7 +114,7 @@ function Index() {
               title="Nu Split — Función de Pagos Compartidos"
               tech={["Notion", "Jira", "Tableau", "Scrum"]}
               actions={
-                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardBI/Dashboard1" />
+                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardTableau/Dashboard1?publish=yes" />
               }
             >
               <CardBlock label="Problema">
@@ -301,7 +301,7 @@ function Index() {
             id="skills"
             className="relative text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl"
           >
-            Habilidades
+            Skills
             <span className="mt-2 block h-1 w-14 rounded-full bg-primary" aria-hidden="true" />
           </h2>
           <ul className="relative mt-8 flex flex-wrap gap-2">

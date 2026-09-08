@@ -44,12 +44,12 @@ export function GithubLink({ href }: { href: string }) {
   return (
     <ActionLink href={href} variant="solid">
       <Github className="h-4 w-4" aria-hidden="true" />
-      View on GitHub
+      Ver en GitHub
     </ActionLink>
   );
 }
 
-export function DocsLink({ href, label = "How It Works" }: { href: string; label?: string }) {
+export function DocsLink({ href, label = "Cómo Funciona" }: { href: string; label?: string }) {
   return (
     <ActionLink href={href} variant="solid">
       <FileText className="h-4 w-4" aria-hidden="true" />
@@ -67,7 +67,7 @@ export function LiveLink({ href, label }: { href: string; label: string }) {
   );
 }
 
-export function TableauLink({ href, label = "View Dashboard" }: { href: string; label?: string }) {
+export function TableauLink({ href, label = "Ver Dashboard" }: { href: string; label?: string }) {
   return (
     <ActionLink href={href} variant="solid">
       <svg
