@@ -48,16 +48,14 @@ export const Route = createFileRoute("/")({
 
 const SKILLS = [
   "Figma",
-  "Claude Design",
-  "Lovable",
-  "MCP",
   "Python",
   "SQL",
   "Power BI",
   "Excel",
-  "Claude Code",
   "R",
   "Tableau",
+  "Vercel",
+  "Supabase",
   "Metodologías Ágiles (Scrum, Kanban)",
   "Diseño UI/UX",
   "IA Generativa",
