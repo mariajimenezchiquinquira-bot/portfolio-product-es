@@ -19,10 +19,10 @@ import zipptoLanding from "@/assets/projects/zippto-landing.png";
 import zipptoCollections from "@/assets/projects/zippto-collections.png";
 import zipptoFront from "@/assets/projects/zippto-flashcard-front.png";
 import zipptoBack from "@/assets/projects/zippto-flashcard-back.png";
-import nuSplitJiraBoard from "@/assets/projects/nusplit-jira-board.png";
-import nuSplitNotionCover from "@/assets/projects/nusplit-notion-cover.png";
-import nuSplitNotionTimelineBacklog from "@/assets/projects/nusplit-notion-timeline-backlog.png";
-import nuSplitTableau from "@/assets/projects/nusplit-tableau-dashboard.png";
+import payraSplitJiraBoard from "@/assets/projects/payrasplit-jira-board.png";
+import payraSplitNotionCover from "@/assets/projects/payrasplit-notion-cover.png";
+import payraSplitNotionTimelineBacklog from "@/assets/projects/payrasplit-notion-timeline-backlog.png";
+import payraSplitTableau from "@/assets/projects/payrasplit-tableau-dashboard.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -109,7 +109,7 @@ function Index() {
           </h2>
           <div className="mt-8 grid gap-6">
             <ProjectCard
-              title="Nu Split — Función de Pagos Compartidos"
+              title="Payra Split — Función de Pagos Compartidos"
               tech={["Notion", "Jira", "Tableau", "Scrum"]}
               actions={
                 <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardTableau/Dashboard1?publish=yes" />
@@ -121,8 +121,8 @@ function Index() {
                 enviar, a menudo usando una calculadora, WhatsApp u otra app.
               </CardBlock>
               <CardBlock label="Solución">
-                Desarrollé un caso de estudio simulado de BI/producto para "Nu Split", una función
-                conceptual que permite a los usuarios de Nubank dividir gastos, solicitar pagos y ver
+                Desarrollé un caso de estudio simulado de BI/producto para "Payra Split", una función
+                conceptual que permite a los usuarios de Payra dividir gastos, solicitar pagos y ver
                 quién ya pagó. Planifiqué el ciclo de vida del producto en Notion, gestioné los
                 sprints en Jira y construí un dashboard en Tableau con datos simulados para analizar
                 las tasas de adopción y finalización.
@@ -138,8 +138,8 @@ function Index() {
                   </p>
                   <ProjectImageGrid
                     images={[
-                      { src: nuSplitNotionCover, alt: "Resumen del roadmap de Nu Split en Notion" },
-                      { src: nuSplitNotionTimelineBacklog, alt: "Cronograma y backlog de Nu Split en Notion" },
+                      { src: payraSplitNotionCover, alt: "Resumen del roadmap de Payra Split en Notion" },
+                      { src: payraSplitNotionTimelineBacklog, alt: "Cronograma y backlog de Payra Split en Notion" },
                     ]}
                   />
                 </div>
@@ -150,7 +150,7 @@ function Index() {
                   <div className="mx-auto w-full max-w-2xl">
                     <ProjectImageGrid
                       images={[
-                        { src: nuSplitJiraBoard, alt: "Tablero Scrum de Nu Split en Jira" },
+                        { src: payraSplitJiraBoard, alt: "Tablero Scrum de Payra Split en Jira" },
                       ]}
                       columns={1}
                     />
@@ -162,7 +162,7 @@ function Index() {
                   </p>
                   <ProjectImageGrid
                     images={[
-                      { src: nuSplitTableau, alt: "Dashboard de uso y adopción de Nu Split en Tableau" },
+                      { src: payraSplitTableau, alt: "Dashboard de uso y adopción de Payra Split en Tableau" },
                     ]}
                     columns={1}
                   />
