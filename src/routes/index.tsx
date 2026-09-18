@@ -187,16 +187,14 @@ function Index() {
                 repaso confusos.
               </CardBlock>
               <CardBlock label="Solución">
-                Construí Zippto, una aplicación web multiusuario donde las personas inician sesión con
-                Google, crean colecciones personalizadas y diseñan flashcards para cualquier materia.
-                Su sistema de repetición espaciada de 3 mazos prioriza las tarjetas que más necesitan
-                práctica, manteniendo las sesiones de estudio enfocadas sin complejidad innecesaria.
+                "Zippto", una aplicación web que simplifica la creación y el repaso de flashcards.
+                Los usuarios pueden crear colecciones personalizadas y estudiar cualquier tema
+                mediante un sistema de repetición espaciada de tres mazos, que prioriza las tarjetas
+                que más necesitan práctica.
               </CardBlock>
               <CardBlock label="Resultado">
-                Una aplicación web completamente funcional y desplegada, con datos por usuario,
-                autenticación, una interfaz personalizada y flujos de estudio intuitivos —
-                demostrando la construcción completa de un producto, desde el diseño UI/UX hasta el
-                despliegue.
+                Una experiencia de estudio más simple e intuitiva, sin configuraciones complejas ni
+                sistemas de repaso confusos.
               </CardBlock>
               <ProjectImageGrid
                 images={[
