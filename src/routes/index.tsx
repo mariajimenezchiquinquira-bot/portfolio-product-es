@@ -129,8 +129,9 @@ function Index() {
                 lanzamiento.
               </CardBlock>
               <CardBlock label="Resultado">
-                Un caso integral que conecta planificación de producto, ejecución ágil y BI para
-                medir una funcionalidad desde el concepto hasta el análisis post-lanzamiento.
+                Una experiencia más simple para dividir gastos, hacer seguimiento a los pagos y
+                saber quién debe a quién, con métricas de adopción y uso para evaluar el desempeño
+                de la función.
               </CardBlock>
               <div className="flex flex-col gap-4">
                 <div>
