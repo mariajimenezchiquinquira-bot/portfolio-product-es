@@ -112,7 +112,7 @@ function Index() {
               title="Payra Split — Función de Pagos Compartidos"
               tech={["Notion", "Jira", "Tableau", "Scrum"]}
               actions={
-                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardTableau/Dashboard1?publish=yes" />
+                <TableauLink href="https://public.tableau.com/app/profile/maria.jimenez7845/viz/PayraSplit_DashboardTableau/Dashboard1?publish=yes" />
               }
             >
               <CardBlock label="Problema">
