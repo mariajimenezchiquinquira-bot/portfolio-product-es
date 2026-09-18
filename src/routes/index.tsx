@@ -173,7 +173,7 @@ function Index() {
 
             <ProjectCard
               title="Zippto — Flashcards Personalizadas"
-              tech={["HTML", "CSS", "JavaScript", "Supabase", "Vercel", "Claude Code"]}
+              tech={["HTML", "UI/UX Design", "JavaScript", "Supabase", "Vercel", "Claude Code"]}
               actions={
                 <>
                   <LiveLink href="https://zippto.vercel.app/landing.html" label="Probar Zippto" />
