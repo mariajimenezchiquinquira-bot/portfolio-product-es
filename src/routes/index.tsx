@@ -117,8 +117,8 @@ function Index() {
             >
               <CardBlock label="Problema">
                 Dividir gastos compartidos puede ser un dolor de cabeza. Cuando una persona paga por
-                todos, tiene que calcular cuánto debe cada quien y luego avisarle a cada amigo cuánto
-                enviar, a menudo usando una calculadora, WhatsApp u otra app.
+                todas las cuentas se complican, o cuando Laura pagó la comida y Felipe las cervezas,
+                hay que cruzar cuentas, saber quién le debe a quién, y al final es todo un rollo.
               </CardBlock>
               <CardBlock label="Solución">
                 Desarrollé un caso de estudio simulado de BI/producto para "Payra Split", una función
