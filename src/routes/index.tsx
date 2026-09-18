@@ -81,8 +81,7 @@ function Index() {
             María José Jiménez
           </h1>
           <p className="mt-3 text-base font-medium text-muted-foreground sm:text-lg">
-            Estudiante de Ingeniería Industrial —{" "}
-            <span className="text-primary">Énfasis en Producto Digital</span>
+            Estudiante de Ingeniería Industrial
           </p>
           <div className="mt-7 flex flex-wrap gap-3">
             <a
