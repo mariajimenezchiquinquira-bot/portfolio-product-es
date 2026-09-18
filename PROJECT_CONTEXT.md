@@ -103,6 +103,11 @@ Aplican a todos los proyectos del portafolio que usan estos componentes:
 - Se quitó "Figma" de la lista de skills y se agregó **"Automatización"**.
 - El copyright del footer se cambió de "© 2026 María José Jiménez" a **"© María José Jiménez"** (sin año).
 
+### Eliminación del proyecto de Automatización — Solicitud Herramientas de Pago
+- Se eliminó por completo el tercer proyecto del portafolio (Power Automate / Process Automation).
+- Se borraron sus imágenes (`formulario.png`, `power-automate-flow.png`, `power-automate-email-detail.png`, `power-automate-request-approved-notification.png`, `power-automate-email-approved.png`) y el PDF de documentación técnica (`premium-tool-request-automation-technical-documentation.pdf`).
+- Se quitó el import y uso del componente `DocsLink` en `index.tsx`, ya que solo lo usaba este proyecto.
+
 ## Pendiente / a futuro
 
 - Revisar si el remote de git tiene algún token incrustado en la URL (buena práctica de seguridad, ya señalado como pendiente en el portafolio en inglés).
