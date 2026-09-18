@@ -117,15 +117,16 @@ function Index() {
             >
               <CardBlock label="Problema">
                 Dividir gastos compartidos puede ser un dolor de cabeza. Cuando una persona paga por
-                todas las cuentas se complican, o cuando Laura pagó la comida y Felipe las cervezas,
+                todos, las cuentas se complican, o cuando Laura pagó la comida y Felipe las cervezas,
                 hay que cruzar cuentas, saber quién le debe a quién, y al final es todo un rollo.
               </CardBlock>
               <CardBlock label="Solución">
-                Desarrollé un caso de estudio simulado de BI/producto para "Payra Split", una función
-                conceptual que permite a los usuarios de Payra dividir gastos, solicitar pagos y ver
-                quién ya pagó. Planifiqué el ciclo de vida del producto en Notion, gestioné los
-                sprints en Jira y construí un dashboard en Tableau con datos simulados para analizar
-                las tasas de adopción y finalización.
+                "Payra Split", una función que permite a los usuarios de Payra, dividir gastos al
+                instante y ver quién ya pagó. A continuación se muestra un overview del proceso de
+                planificación, ejecución y seguimiento del producto. Se utilizó Notion para
+                planificar el producto, Jira para gestionar la ejecución de cada fase mediante
+                sprints y tareas, y Tableau para analizar las tasas de adopción y uso después del
+                lanzamiento.
               </CardBlock>
               <CardBlock label="Resultado">
                 Un caso integral que conecta planificación de producto, ejecución ágil y BI para
