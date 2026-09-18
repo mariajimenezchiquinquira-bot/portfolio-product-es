@@ -206,27 +206,29 @@ function Index() {
               />
             </ProjectCard>
             <ProjectCard
-              title="Automatización de Solicitud de Herramientas Premium"
+              title="Automatización de Solicitudes de Herramientas Pagas"
               tech={["Power Automate"]}
               actions={
                 <DocsLink href="/docs/premium-tool-request-automation-technical-documentation.pdf" />
               }
             >
               <CardBlock label="Problema">
-                Solicitar herramientas premium de IA, diseño o productividad era un proceso disperso
-                entre correos y mensajes, con aprobaciones manuales y poca trazabilidad.
+                Solicitar a la empresa herramientas pagas como Claude Pro, Canva Pro, entre otras,
+                requiere enviar varios correos y mensajes para obtener la aprobación, haciendo que
+                el proceso sea lento y sin una trazabilidad clara.
               </CardBlock>
               <CardBlock label="Solución">
-                Desarrollé un flujo en Power Automate que centraliza y automatiza todo el proceso. Los
-                usuarios envían solicitudes a través de Microsoft Forms con detalles como la
-                herramienta, la justificación, el costo y la duración de la licencia. El flujo luego
-                enruta la solicitud para su aprobación, notifica al solicitante del resultado y
-                registra automáticamente cada decisión.
+                Mediante un flujo de Power Automate se centraliza y automatiza todo el proceso. En
+                lugar de enviar correos y mensajes, los usuarios hacen su solicitud a través de un
+                Forms con la herramienta que necesitan, la justificación, el costo y la duración de
+                la licencia. A partir de ahí, el flujo se encarga de enviar la solicitud al área
+                encargada para su aprobación o rechazo, notificar al solicitante y dejar registrada
+                cada decisión.
               </CardBlock>
               <CardBlock label="Resultado">
-                Convirtió un proceso manual y disperso en un flujo de trabajo estructurado,
+                Un proceso manual y disperso se convirtió en un flujo de trabajo estructurado,
                 automatizado y totalmente trazable, reduciendo la carga operativa y asegurando que
-                cada solicitud quede debidamente documentada.
+                cada solicitud quedara registrada y documentada.
               </CardBlock>
               <div className="mx-auto grid w-full max-w-3xl gap-3 sm:grid-cols-2">
                 <a
