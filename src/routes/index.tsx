@@ -206,7 +206,7 @@ function Index() {
               />
             </ProjectCard>
             <ProjectCard
-              title="Automatización de Solicitudes de Herramientas Pagas"
+              title="Automatización - Solicitud Herramientas de Pago"
               tech={["Power Automate", "Process Automation", "Process Improvement"]}
               actions={
                 <DocsLink href="/docs/premium-tool-request-automation-technical-documentation.pdf" />
@@ -300,7 +300,7 @@ function Index() {
             id="skills"
             className="relative text-3xl font-extrabold tracking-tight text-foreground sm:text-4xl"
           >
-            Skills
+            Skills & Tools
             <span className="mt-2 block h-1 w-14 rounded-full bg-primary" aria-hidden="true" />
           </h2>
           <ul className="relative mt-8 flex flex-wrap gap-2">
