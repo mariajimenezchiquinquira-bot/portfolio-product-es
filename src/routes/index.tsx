@@ -318,7 +318,7 @@ function Index() {
 
       <footer className="border-t border-border bg-secondary/50">
         <div className="mx-auto flex max-w-5xl flex-col gap-4 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-sm text-muted-foreground">© 2026 María José Jiménez</p>
+          <p className="text-sm text-muted-foreground">© María José Jiménez</p>
           <div className="flex gap-5">
             <a
               href="https://www.linkedin.com/in/mariajosejimenez-ingenieraindustrial/"
