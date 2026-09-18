@@ -37,14 +37,24 @@ Solución: correr `rm -f .git/index.lock` en Git Bash (dentro de la carpeta del 
 
 ## Cambios realizados hasta ahora
 
+### Encabezado principal
+- Se quitó "— Énfasis en Producto Digital" del subtítulo bajo el nombre. Ahora solo dice "Estudiante de Ingeniería Industrial".
+
 ### Creación del proyecto (traducción inicial)
 - Se copió `portfolio-product` completo (código, componentes, configuración) sin `.git` ni `node_modules`.
 - Se tradujo todo el texto visible de `src/routes/index.tsx` al español: título y meta SEO, encabezado, secciones "Proyectos" y "Skills" (antes "Habilidades"), y el contenido de los 3 proyectos (Nu Split, Zippto, Automatización de Solicitud de Herramientas Premium) en formato Problema/Solución/Resultado.
 - Las imágenes se dejaron igual que en inglés como marcador de posición inicial, para reemplazarlas después por capturas en español.
 
-### Nu Split — Función de Pagos Compartidos
-- Imagen de portada de Notion (`nusplit-notion-cover.png`) reemplazada por una captura nueva de la página "Nu Split — Product Roadmap" en Notion.
-- El botón de Tableau ahora dice "Ver Dashboard" (antes "View Dashboard") y apunta a: `https://public.tableau.com/app/profile/maria.jimenez7845/viz/NuSplit-DashboardTableau/Dashboard1?publish=yes`
+### Nu Split → Payra Split (rebranding a banco ficticio)
+- Se reemplazó "Nu Split" / "Nubank" por **"Payra Split"** / **"Payra"** en todo el texto visible y en el código (título de la card, imports, alt text de imágenes), porque el producto original usaba el nombre de un banco real.
+- Los archivos de imagen se renombraron de `nusplit-*.png` a `payrasplit-*.png` para que coincidan con las nuevas rutas de import.
+- Texto de Problema/Solución/Resultado reescrito:
+  - **Problema:** "Dividir gastos compartidos puede ser un dolor de cabeza. Cuando una persona paga por todos, las cuentas se complican, o cuando Laura pagó la comida y Felipe las cervezas, hay que cruzar cuentas, saber quién le debe a quién, y al final es todo un rollo."
+  - **Solución:** "Payra Split", una función que permite a los usuarios de Payra dividir gastos al instante y ver quién ya pagó, con overview de Notion (planificación), Jira (sprints/tareas) y Tableau (adopción y uso).
+  - **Resultado:** "Una experiencia más simple para dividir gastos, hacer seguimiento a los pagos y saber quién debe a quién, con métricas de adopción y uso para evaluar el desempeño de la función."
+- Las 4 imágenes del proyecto (`payrasplit-notion-cover.png`, `payrasplit-notion-timeline-backlog.png`, `payrasplit-jira-board.png`, `payrasplit-tableau-dashboard.png`) se reemplazaron por capturas reales con la marca "Payra", tomadas de Notion/Jira/Tableau ya renombrados.
+- El botón de Tableau dice "Ver Dashboard" y apunta a la versión en español del dashboard: `https://public.tableau.com/app/profile/maria.jimenez7845/viz/PayraSplit_DashboardTableauES/Dashboard1`
+  (Nota: este link es distinto al usado en `portfolio-bi` y `portfolio-product`, que en inglés usan el nombre ficticio "Splitly" y apuntan a `SplitlySplit-DashboardBI`. Cada portafolio quedó con su propio nombre ficticio y su propio link — no se sincronizaron entre sí a petición de la usuaria.)
 
 ### Premium Tool Request Automation (Power Automate)
 - El botón que antes decía "How It Works" pasó primero a "Cómo Funciona" y finalmente quedó como **"Ver Documentación"**.
@@ -59,7 +69,17 @@ Aplican a todos los proyectos del portafolio que usan estos componentes:
 ### Sección de habilidades
 - El encabezado de esa sección se cambió de "Habilidades" a **"Skills"** (a petición explícita de la usuaria, en inglés dentro del portafolio en español).
 
+### Zippto — Flashcards Personalizadas
+- Texto de Solución y Resultado reescrito:
+  - **Solución:** "Zippto", una aplicación web que simplifica la creación y el repaso de flashcards. Los usuarios pueden crear colecciones personalizadas y estudiar cualquier tema mediante un sistema de repetición espaciada de tres mazos, que prioriza las tarjetas que más necesitan práctica.
+  - **Resultado:** "Una experiencia de estudio más simple e intuitiva, sin configuraciones complejas ni sistemas de repaso confusos."
+- Las 4 imágenes del proyecto se reemplazaron por capturas reales de la app:
+  - `zippto-landing.png` (fila 1, izquierda): landing pública "Estudia a tu manera".
+  - `zippto-collections.png` (fila 1, derecha): dashboard interno "¡Hola, María!" con colecciones.
+  - `zippto-flashcard-front.png` (fila 2, izquierda): frente de una flashcard (ejemplo "boost").
+  - `zippto-flashcard-back.png` (fila 2, derecha): reverso de esa misma flashcard.
+  - Nota: los nombres de archivo (`landing`, `collections`, `front`, `back`) ya no describen 100% el contenido real de cada imagen — se mantuvieron los nombres originales del código y solo se reemplazó el contenido, para no tener que tocar los imports en `index.tsx`.
+
 ## Pendiente / a futuro
 
-- Reemplazar las imágenes restantes de Zippto y de Premium Tool Request Automation por capturas en español (si aplica — algunas ya se actualizaron con capturas reales del flujo ejecutado, ver commits del repo).
 - Revisar si el remote de git tiene algún token incrustado en la URL (buena práctica de seguridad, ya señalado como pendiente en el portafolio en inglés).
