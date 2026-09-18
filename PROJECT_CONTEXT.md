@@ -5,9 +5,9 @@ Este archivo resume la estructura de este proyecto y los cambios hechos con ayud
 ## Datos generales
 
 - Proyecto: React + Vite, versión en español del portafolio de producto (`portfolio-product-es`)
-- Ubicación: `C:\Users\alura\Downloads\Claude\PortfolioHTML\portfolio-product-es`
+- Ubicación: `C:\Users\alura\Documents\Claude\PortfolioHTML\portfolio-product-es`
 - Repositorio: `github.com/mariajimenezchiquinquira-bot/portfolio-product-es`, rama `master`
-- Este proyecto es una copia independiente de `portfolio-product` (la versión en inglés, en `C:\Users\alura\Downloads\Claude\PortfolioHTML\portfolio-product`, rama `main`). Se creó como proyecto separado —código propio, sin compartir `.git`— porque además del idioma, las imágenes también iban a cambiar (capturas de pantalla en español en vez de en inglés).
+- Este proyecto es una copia independiente de `portfolio-product` (la versión en inglés, en `C:\Users\alura\Documents\Claude\PortfolioHTML\portfolio-product`, rama `main`). Se creó como proyecto separado —código propio, sin compartir `.git`— porque además del idioma, las imágenes también iban a cambiar (capturas de pantalla en español en vez de en inglés).\n- Nota: todos los proyectos de este portafolio (y de `portfolio-bi-es` y `portfolio-data-analysis-es`) también se reunieron, sin duplicados, en un cuarto portafolio consolidado llamado `EStodo-portfolio` (repo de GitHub `TodoSpanish`), para tenerlos todos juntos en un solo lugar. Los cambios hechos ahí son independientes de los de este proyecto — no se sincronizan automáticamente entre sí.
 - Todo el contenido del portafolio vive en `src/routes/index.tsx`
 - Las imágenes de los proyectos están en `src/assets/projects/`
 - Los textos de los botones reutilizables (GitHub, documentación, dashboard) viven en `src/components/portfolio/ProjectCard.tsx`
@@ -17,7 +17,7 @@ Este archivo resume la estructura de este proyecto y los cambios hechos con ayud
 El proyecto está conectado a **Vercel** (repo de GitHub enlazado directamente), con su propio link de despliegue distinto al del portafolio en inglés. El deployment es automático:
 
 ```
-cd "C:\Users\alura\Downloads\Claude\PortfolioHTML\portfolio-product-es"
+cd "C:\Users\alura\Documents\Claude\PortfolioHTML\portfolio-product-es"
 git add -A
 git commit -m "mensaje descriptivo"
 git push origin master
@@ -43,7 +43,7 @@ Cuando Claude (desde Cowork) escribe archivos directamente en esta carpeta (imá
 fatal: Unable to create '.../index.lock': File exists.
 ```
 
-Solución: correr `rm -f .git/index.lock` en Git Bash (dentro de la carpeta del proyecto) antes de `git add -A`.
+Solución: correr `find .git -name "*.lock" -delete` en Git Bash (dentro de la carpeta del proyecto) antes de `git add -A`. Si el archivo no se puede borrar por permisos, Claude debe pedir permiso de eliminación en la carpeta conectada antes de reintentar.
 
 ## Cambios realizados hasta ahora
 
@@ -89,6 +89,19 @@ Aplican a todos los proyectos del portafolio que usan estos componentes:
   - `zippto-flashcard-front.png` (fila 2, izquierda): frente de una flashcard (ejemplo "boost").
   - `zippto-flashcard-back.png` (fila 2, derecha): reverso de esa misma flashcard.
   - Nota: los nombres de archivo (`landing`, `collections`, `front`, `back`) ya no describen 100% el contenido real de cada imagen — se mantuvieron los nombres originales del código y solo se reemplazó el contenido, para no tener que tocar los imports en `index.tsx`.
+
+### Automatización — Solicitud Herramientas de Pago (antes "Premium Tool Request Automation")
+- Título cambiado varias veces hasta quedar en su forma final: **"Automatización — Solicitud Herramientas de Pago"** (con raya larga "—", no guion corto).
+- Texto de Problema/Solución/Resultado reescrito con foco en herramientas como Claude Pro y Canva Pro, en vez de herramientas genéricas de IA/diseño/productividad.
+- Tags bajo el título ajustados hasta quedar en: **Power Automate · Process Automation** (se probó agregar y luego quitar "Process Improvement").
+
+### Zippto — Flashcards Personalizadas
+- En la lista de tecnologías bajo el título, se quitó "CSS" y luego "HTML" y "JavaScript", dejando finalmente: **UI/UX Design · Supabase · Vercel · Claude Code**.
+
+### Sección de habilidades y footer
+- El encabezado de la sección de habilidades se cambió de "Skills" a **"Skills & Tools"**.
+- Se quitó "Figma" de la lista de skills y se agregó **"Automatización"**.
+- El copyright del footer se cambió de "© 2026 María José Jiménez" a **"© María José Jiménez"** (sin año).
 
 ## Pendiente / a futuro
 
