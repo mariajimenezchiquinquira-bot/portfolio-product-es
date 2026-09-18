@@ -25,6 +25,16 @@ git push origin master
 
 Al hacer push a `master`, Vercel detecta el commit y publica el nuevo build solo, normalmente en uno o dos minutos.
 
+### Quién hace el `git push`
+
+Claude (desde Cowork) puede escribir archivos y hacer `git add` + `git commit` directamente en esta carpeta, pero **no tiene credenciales de GitHub**, así que no puede hacer `git push`. Por eso, el flujo habitual es:
+
+1. Claude hace los cambios, los deja en `git add -A` + `git commit` (commit local listo).
+2. **María José hace el `git push` manualmente**, abriendo Git Bash en esta carpeta y corriendo `git push`.
+3. Una vez el push termina, Vercel redespliega solo.
+
+Si después de un cambio el sitio publicado no se ve actualizado, lo primero a revisar es si falta ese `git push` (con `git status` o `git log` se puede ver si hay commits locales sin subir). Lo segundo, si el push ya se hizo, es la caché del navegador — refrescar con `Ctrl + Shift + R` suele resolverlo.
+
 ### Problema conocido: `.git/index.lock` atascado
 
 Cuando Claude (desde Cowork) escribe archivos directamente en esta carpeta (imágenes, PDFs, código), a veces queda un archivo `.git/index.lock` atascado que bloquea el siguiente `git add` en la terminal con el error:
