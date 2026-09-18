@@ -17,6 +17,7 @@ import payraSplitJiraBoard from "@/assets/projects/payrasplit-jira-board.png";
 import payraSplitNotionCover from "@/assets/projects/payrasplit-notion-cover.png";
 import payraSplitNotionTimelineBacklog from "@/assets/projects/payrasplit-notion-timeline-backlog.png";
 import payraSplitTableau from "@/assets/projects/payrasplit-tableau-dashboard.png";
+import churnDashboard from "@/assets/projects/churn-capital-loss-dashboard-v2.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -197,6 +198,35 @@ function Index() {
                   { src: zipptoBack, alt: "Reverso de la flashcard de Zippto" },
                   { src: zipptoFront, alt: "Frente de la flashcard de Zippto" },
                 ]}
+              />
+            </ProjectCard>
+
+            <ProjectCard
+              title="Análisis — Fuga de Clientes y Pérdida de Capital"
+              tech={["Power BI", "DAX", "Visualización de Datos"]}
+              actions={
+                <GithubLink href="https://github.com/mariajimenezchiquinquira-bot/PowerBi-Customer-Churn-Capital-Loss-Analysis" />
+              }
+            >
+              <CardBlock label="Problema">
+                Un banco enfrentaba una alta fuga de clientes sin identificar sus principales
+                causas ni el impacto financiero asociado.
+              </CardBlock>
+              <CardBlock label="Enfoque">
+                Se realizó un análisis exploratorio en Power BI para identificar patrones de
+                fuga, comparar segmentos y detectar los clientes con mayor riesgo de abandono.
+              </CardBlock>
+              <CardBlock label="Resultados">
+                Se encontró que la pérdida de capital estaba concentrada en clientes con altos
+                saldos, generando un impacto financiero significativo. La inactividad surgió
+                como la principal señal de alerta, especialmente en Alemania, donde se registró
+                la mayor tasa de fuga.
+              </CardBlock>
+              <img
+                src={churnDashboard}
+                alt="Dashboard de Power BI: Análisis de Fuga de Clientes y Pérdida de Capital"
+                loading="lazy"
+                className="mx-auto w-full max-w-3xl rounded-md bg-white object-contain"
               />
             </ProjectCard>
           </div>
