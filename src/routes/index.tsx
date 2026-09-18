@@ -206,7 +206,7 @@ function Index() {
               />
             </ProjectCard>
             <ProjectCard
-              title="Automatización - Solicitud Herramientas de Pago"
+              title="Automatización — Solicitud Herramientas de Pago"
               tech={["Power Automate", "Process Automation"]}
               actions={
                 <DocsLink href="/docs/premium-tool-request-automation-technical-documentation.pdf" />
