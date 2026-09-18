@@ -3,18 +3,12 @@ import { FileText, Linkedin } from "lucide-react";
 import {
   ActionLink,
   CardBlock,
-  DocsLink,
   GithubLink,
   LiveLink,
   ProjectCard,
   TableauLink,
 } from "@/components/portfolio/ProjectCard";
 import { ProjectImageGrid } from "@/components/portfolio/ImagePlaceholder";
-import paFormulario from "@/assets/projects/formulario.png";
-import paFlow from "@/assets/projects/power-automate-flow.png";
-import paRequestMail from "@/assets/projects/power-automate-email-detail.png";
-import paRequestNotify from "@/assets/projects/power-automate-request-approved-notification.png";
-import paApprovedMail from "@/assets/projects/power-automate-email-approved.png";
 import zipptoLanding from "@/assets/projects/zippto-landing.png";
 import zipptoCollections from "@/assets/projects/zippto-collections.png";
 import zipptoFront from "@/assets/projects/zippto-flashcard-front.png";
@@ -204,85 +198,6 @@ function Index() {
                   { src: zipptoFront, alt: "Frente de la flashcard de Zippto" },
                 ]}
               />
-            </ProjectCard>
-            <ProjectCard
-              title="Automatización — Solicitud Herramientas de Pago"
-              tech={["Power Automate", "Process Automation"]}
-              actions={
-                <DocsLink href="/docs/premium-tool-request-automation-technical-documentation.pdf" />
-              }
-            >
-              <CardBlock label="Problema">
-                Solicitar a la empresa herramientas pagas como Claude Pro, Canva Pro, entre otras,
-                requiere enviar varios correos y mensajes para obtener la aprobación, haciendo que
-                el proceso sea lento y sin una trazabilidad clara.
-              </CardBlock>
-              <CardBlock label="Solución">
-                Mediante un flujo de Power Automate se centraliza y automatiza todo el proceso. En
-                lugar de enviar correos y mensajes, los usuarios hacen su solicitud a través de un
-                Forms con la herramienta que necesitan, la justificación, el costo y la duración de
-                la licencia. A partir de ahí, el flujo se encarga de enviar la solicitud al área
-                encargada para su aprobación o rechazo, notificar al solicitante y dejar registrada
-                cada decisión.
-              </CardBlock>
-              <CardBlock label="Resultado">
-                Un proceso manual y disperso se convirtió en un flujo de trabajo estructurado,
-                automatizado y totalmente trazable, reduciendo la carga operativa y asegurando que
-                cada solicitud quedara registrada y documentada.
-              </CardBlock>
-              <div className="mx-auto grid w-full max-w-3xl gap-3 sm:grid-cols-2">
-                <a
-                  href={paFlow}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="group block overflow-hidden rounded-md sm:row-span-2"
-                >
-                  <img
-                    src={paFlow}
-                    alt="Flujo de Power Automate ejecutándose exitosamente"
-                    loading="lazy"
-                    className="h-full w-full bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                  />
-                </a>
-                {[
-                  { src: paFormulario, alt: "Formulario de solicitud de herramienta premium en Microsoft Forms" },
-                  { src: paRequestMail, alt: "Correo de aprobación con los detalles de la solicitud" },
-                ].map((image) => (
-                  <a
-                    key={image.src}
-                    href={image.src}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group block overflow-hidden rounded-md"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="aspect-video w-full bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </a>
-                ))}
-                {[
-                  { src: paApprovedMail, alt: "Correo de confirmación de aprobación para el administrador" },
-                  { src: paRequestNotify, alt: "Notificación de que la solicitud fue aprobada" },
-                ].map((image) => (
-                  <a
-                    key={image.src}
-                    href={image.src}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="group block overflow-hidden rounded-md"
-                  >
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      loading="lazy"
-                      className="aspect-video w-full bg-white object-contain transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
-                  </a>
-                ))}
-              </div>
             </ProjectCard>
           </div>
         </section>
