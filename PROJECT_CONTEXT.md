@@ -108,6 +108,13 @@ Aplican a todos los proyectos del portafolio que usan estos componentes:
 - Se borraron sus imágenes (`formulario.png`, `power-automate-flow.png`, `power-automate-email-detail.png`, `power-automate-request-approved-notification.png`, `power-automate-email-approved.png`) y el PDF de documentación técnica (`premium-tool-request-automation-technical-documentation.pdf`).
 - Se quitó el import y uso del componente `DocsLink` en `index.tsx`, ya que solo lo usaba este proyecto.
 
+### Nueva card: Análisis — Fuga de Clientes y Pérdida de Capital (sept 2026)
+- Se agregó como cuarto proyecto (card nueva, sin quitar ninguna existente) la card **"Análisis — Fuga de Clientes y Pérdida de Capital"**, copiada tal cual del portafolio `portfolio-data-analysis-es` (mismo texto en español y misma imagen).
+- Tecnologías: Power BI · DAX · Visualización de Datos.
+- Botón: `GithubLink` apuntando a `github.com/mariajimenezchiquinquira-bot/PowerBi-Customer-Churn-Capital-Loss-Analysis`.
+- Imagen `churn-capital-loss-dashboard-v2.png` copiada a `src/assets/projects/` de este proyecto (no existía antes aquí).
+- Cambios ya en `git add` + `git commit` local (commit `daf1e4f`); falta el `git push` manual de la usuaria.
+
 ## Pendiente / a futuro
 
 - Revisar si el remote de git tiene algún token incrustado en la URL (buena práctica de seguridad, ya señalado como pendiente en el portafolio en inglés).
