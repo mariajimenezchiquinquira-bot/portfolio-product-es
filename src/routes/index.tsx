@@ -42,7 +42,6 @@ export const Route = createFileRoute("/")({
 });
 
 const SKILLS = [
-  "Automatización",
   "Python",
   "SQL",
   "Power BI",
